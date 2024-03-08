@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Project 2</title>
+<style>
+    /* typeface used for the headings */
+@font-face {
+    font-family: "Montserrat";
+    src: url("/resources/fonts/Montserrat-Regular.ttf");
+}
+
+/* typeface used for the <p> elements */
+@font-face {
+    font-family: "Nunito";
+    src: url("/resources/fonts/Nunito-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    color: #ffffff; 
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header at the top */
+#header {
+    height: 50vh;
+    background-image: url("https://blog.suisa.ch/wp-content/uploads/2017/01/Fessler-Nickless-Videostill.jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+} 
+
+h3 {
+    text-align: center;
+} 
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+/* "About Me" section */
+#about {
+    background-color: #3d84a8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 7%;
+}
+
+/* "My Hobbies" section */
+#hobbies {
+    background-color: #43a680;
+    padding-top: 2%;
+}
+
+/* invisible <div> element around all the hobby "cards" */
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+    row-gap: 20px;
+}
+
+/* <div> element for each hobby "card" */
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc(33% - 0.5em);
+}
+
+img {
+    width: 100%;
+}
+
+/* <div> around the hobby "card" text */
+.card-text-container {
+    padding: 15px 20px;
+}
+
+/* styling for mobile devices */
+@media (max-width: 736px) {
+    #cards-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+</style>    
+</head>
+
+<body>
+
+    <!-- HEADER AT THE TOP -->    
+    <div id="header">
+        <h1>My Decent Website</h1>
+    </div>
+
+    <!-- "ABOUT" SECTION -->    
+    <div id="about">
+        <h2>(Almost) All About Me</h2>
+        <p>Welcome to my website! I'm a 13 year old student living in Malaysia. This website is full of information about me, such as my hobbies. Recently, I've been learning to code so I have decided to build this website using HTML.</p>  
+    </div>  
+    
+	<!-- "HOBBIES" SECTION -->
+    <div id="hobbies">
+        <h2>My Hobbies</h2>
+		
+		<!-- <div> ELEMENT THAT CONTAINS ALL THE CARDS -->
+		<div id="cards-container">
+
+			<!-- FIRST CARD -->
+			<div class="card">
+				<div class="card-img-container">
+					<img src="https://pbs.twimg.com/media/FvtwifnWwAsjlL5?format=jpg&name=large" width="300px"> 
+				</div>
+				<div class="card-text-container">
+					<h3>Music</h3> 
+					<p>I love to play and music, and I'm currently learning how to play the guitar! There are many other instruments which I want to play such as a bass, the drums, a piano, and a saxaphone. So far I can only play the recorder and a little bit of guitar.</p> 
+				</div>
+			</div>
+
+			<!-- SECOND CARD -->
+			<div class="card">
+				<div class="card-img-container">
+					<img src="https://shorturl.at/cjoS4" width="300px"> 
+				</div>
+				<div class="card-text-container">
+					<h3>Travelling</h3> 
+					<p>I love to travel with my family! Even if we just go to the mall or to a restaurant, I enjoy every part of it! Especially when we travel to other countries on holiday!</p> 
+				</div>
+			</div>
+			 
+			<!-- THIRD CARD -->
+			<div class="card">
+				<div class="card-img-container">
+					<img src="https://www.rushu.rush.edu/sites/default/files/Rush%20Medical%20College/john-nickless.jpg"> 
+				</div>
+				<div class="card-text-container">
+					<h3>Reading</h3> 
+					<p>I absolutely adore reading! Reading has always been a great way for me to pass the time when I don't have any important work to do. Not only because it's fun and time consuming, but because it's beneficial to the brain too! I have read many book series in the past, such as Harry Potter, Percy Jackson, Heroes Of Olympus, and Goosebumps. Currently I am reading a book about Astronomy.</p> 
+				</div>
+			</div>
+			  
+		</div>
+		<!-- END TAG FOR <div id="cards-container"> -->
+
+    </div>
+
+	<!-- END TAG FOR <div id="hobbies"> -->
+
+</body>
+
+
+</html>
